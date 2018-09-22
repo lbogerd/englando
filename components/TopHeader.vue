@@ -1,12 +1,12 @@
 <template>
   <v-toolbar 
-    color="primary"
+    color="secondary"
     fixed
     app
   >
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-side-icon />
     <v-toolbar-title>Englando</v-toolbar-title>
-    <v-spacer></v-spacer>
+    <v-spacer />
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat>
         <nuxt-link to="/">Home</nuxt-link>
