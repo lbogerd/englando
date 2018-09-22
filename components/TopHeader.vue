@@ -5,7 +5,9 @@
     app
   >
     <v-toolbar-side-icon />
-    <v-toolbar-title>Englando</v-toolbar-title>
+    <v-toolbar-title>
+      <nuxt-link to="/">Englando</nuxt-link>
+    </v-toolbar-title>
     <v-spacer />
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat>
@@ -17,3 +19,9 @@
     </v-toolbar-items>
   </v-toolbar>
 </template>
+
+<style lang="scss" scoped>
+  a {
+    text-decoration: none;
+  }
+</style>
