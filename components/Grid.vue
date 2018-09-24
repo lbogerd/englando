@@ -4,17 +4,21 @@
     class="util__flex"
   >
     <component 
-      :key="blok._uid" 
       v-for="blok in blok.columns" 
+      :key="blok._uid" 
       :blok="blok" 
       :is="blok.component"
-      >
-      </component>
+    />
   </div>
 </template>
 
 <script>
 export default {
-  props: ['blok']
+  props: {
+    blok: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
