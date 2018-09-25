@@ -8,8 +8,10 @@
 export default {
   props: {
     blok: {
-      type: String,
-      default: ''
+      type: Object,
+      default: function () {
+        return {}
+      }
     }
   }
 }
