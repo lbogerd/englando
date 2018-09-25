@@ -2,12 +2,16 @@
   <v-app>
     <div>
       <top-header />
-      <main 
-        id="main" 
-        role="main"
-      >
-        <nuxt />
-      </main>
+      <v-content>
+        <v-container>
+          <main 
+            id="main" 
+            role="main"
+          >
+            <nuxt />
+          </main>
+        </v-container>
+      </v-content>
       <bottom-footer />
     </div>
   </v-app>
